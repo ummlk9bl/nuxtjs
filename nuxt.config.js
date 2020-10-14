@@ -35,6 +35,11 @@ export default {
   /*
    ** Build configuration
    */
+  serverMiddleware: [
+  { 
+    path: '/api', handler: '~/server/index.ts',
+  },
+ ],
   build: {
     /*
      ** You can extend webpack config here
